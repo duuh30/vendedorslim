@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vendedor Slim Framework 3</title>
+</head>
+<body>
+   <h1>Vendedor Slim Framework 3 - Menu Principal</h1>
+
+   <h3> Cadastro de Frutas </h3>
+   <form method="post">
+  	<p><label>Nome da Fruta</label> <input type="text" name="nome_fruta" placeholder="Digite o nome da fruta"> </p>
+   	<p><label>Preço da Fruta</label> <input type="text" name="preco_fruta" placeholder="Digite o preço da fruta"></p>
+   	<p><label> Quantidade</label> <input type="text" name="quantidade_fruta" placeholder="Digite a quantidade de fruta"> </p>
+   		<p><label> Tipo de Fruta </label> <select name="tipo_fruta_id">
+   			<option>1</option>
+   			<option>2</option>
+   			<option>3</option>
+   		</select> </p>
+   		<input type="submit" name="cadFruta" value="Cadastrar Fruta">
+   </form>
+
+   <h3> Cadastro de Tipos </h3>
+   <form method="post">
+   	<p><label>Descrição</label><input type="text" name="descricao_tipo" placeholder="Digite a descrição do tipo"></p>
+   	<p><label>Unidade de Medida</label> <select name="unidade_tipo">
+   		<option>1</option>
+   		<option>2</option>
+   	</select></p>
+   	<p><input type="submit" name="cadTipo" value="Cadastrar Tipo">
+   </form>
+
+   <h3>Cadastro de Unidades de Medidas </h3>
+   <form method="post">
+   		<p><label>Sigla</label><input type="text" name="sigla" placeholder="Digite a sigla da medida"></p>
+   		<p><label>Descrição</label><input type="text" name="desc_medida" placeholder="Digite a descrição da medida"></p>
+   		<p><input type="submit" name="cadMedida"></p>
+   </form>
+
+   <div class="listar">
+   		<table border="2">
+   			<tr>
+   				<td>Código</td>
+   				<td>Nome</td>
+   				<td>Preço</td>
+   				<td>Quantidade</td>
+   				<td>Tipo</td>
+
+   			</tr>
+
+   			<tr>
+   				<td>1</td>
+   				<td>Eduardo Teste</td>
+   				<td>3.50</td>
+   				<td>50</td>
+   				<td>2</td>
+   			</tr>
+   		</table>
+   </div>
+
+</body>
+</html>
